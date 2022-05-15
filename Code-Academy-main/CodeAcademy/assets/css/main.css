@@ -1,0 +1,184 @@
+#graduates .heading {
+  text-align: center;
+}
+
+#graduates .heading .title-our h2 {
+  color: #3d3d3d;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+#graduates .heading .title-grads h2 {
+  color: #4b4a4a;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+#graduates .heading .line {
+  width: 120px;
+  border: 2px solid #ffbc3e;
+  margin: 30px auto;
+}
+
+.seven-cols {
+  gap: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 80px;
+}
+
+.card-item {
+  position: relative;
+  -webkit-animation: flipback;
+          animation: flipback;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+.card-item img {
+  width: 150px;
+  height: 150px;
+}
+
+.card-item .system {
+  padding: 13px;
+  color: white;
+  background-color: #00b45ad5;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  font-size: 14px;
+}
+
+.card-item .design {
+  padding: 13px;
+  color: white;
+  background-color: #ffcd05ce;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  font-size: 14px;
+}
+
+.card-item .programming {
+  padding: 13px;
+  color: white;
+  background-color: #2383c8d2;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  font-size: 14px;
+}
+
+.card-item .marketing {
+  padding: 13px;
+  color: white;
+  background-color: #872891d2;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  font-size: 14px;
+}
+
+.card-item .teachers {
+  padding: 13px;
+  color: white;
+  background-color: #cf0000c7;
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  font-size: 14px;
+}
+
+.card-item .content h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card-item:hover {
+  -webkit-animation-name: flip;
+          animation-name: flip;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.card-item:hover .content {
+  -webkit-animation-name: show-info;
+          animation-name: show-info;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+@-webkit-keyframes flip {
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip {
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@-webkit-keyframes show-info {
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes show-info {
+  100% {
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes flipback {
+  from {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
+
+@keyframes flipback {
+  from {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+}
